@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CattoS</title>
+    <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(90deg, #FBAF7C 0%, #F7CA6B 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins';
+        }
+
+        main {
+            background-color: #111111;
+            height: 70%;
+            width: 80%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main section.left {
+            background-image: url("https://publish.purewow.net/wp-content/uploads/sites/2/2019/04/cute-kitten-sitting-in-bed.jpg?fit=728%2C524");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: 50%;
+            margin-left: 25px;
+            height: 92%;
+            border-radius: 15px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #11111148;
+            background-blend-mode: multiply;
+        }
+
+        main section.left article.glassmorphism {
+            background-color: rgba(255, 255, 255, 0.165);
+            width: 80%;
+            height: 80%;
+            backdrop-filter: blur(20px);
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        main section.left article.glassmorphism p:nth-child(1) {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        main section.left article.glassmorphism h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        main section.left article.glassmorphism p:nth-child(3) {
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: 40px;
+        }
+
+        main section.left article.glassmorphism p:nth-child(4) {
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: 30%;
+        }
+
+        main section.left article.glassmorphism a {
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        main section.right {
+            color: white;
+            width: 40%;
+            padding-right: 4%;
+        }
+
+        main section.right h2 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        main section.right p {
+            margin-top: 20px;
+            color: rgb(199, 199, 199);
+        }
+
+        main section.right p:nth-child(4) {
+            display: none;
+        }
+
+        main section.right a {
+            display: none;
+        }
+
+        main section.right form > div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main section.right form > div:nth-child(1) label, main section.right form > div:nth-child(2) label {
+            margin-top: 30px;
+            color: rgb(101, 101, 101);
+            font-size: 12px;
+        }
+
+        main section.right form > div:nth-child(1) input, main section.right form > div:nth-child(2) input {
+            background-color: #111111;
+            border: 1px solid rgb(26, 26, 26);
+            height: 27px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        main section.right form > div > div.loginLongterm {
+            margin-top: 20px;
+            color: rgb(101, 101, 101);
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        main section.right form input.submit {
+            margin-top: 20px;
+            background-color: #F7772E;
+            border: none;
+            height: 35px;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            box-shadow: 0px 0px 7.05561px #F7772E;
+        }
+
+        @media (min-width: 1300px) {
+            main {
+                height: 50%;
+                width: 60%;
+                border-radius: 30px;
+            }
+        }
+
+        @media (min-width: 850px) and (max-height: 800px) {
+            main {
+                height: 70%;
+            }
+        }
+
+        @media (min-width: 850px) and (max-height: 550px) {
+            main {
+                height: 90%;
+            }
+        }
+
+        @media (min-width: 850px) and (max-height: 470px) {
+            body {
+                min-height: 100vh;
+                height: auto;
+            }
+
+            main {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                height: auto;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+            main section.left {
+                height: 325px;
+                border-radius: 15px;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #11111148;
+                background-blend-mode: multiply;
+            }
+
+            main section.left article.glassmorphism p:nth-child(4) {
+                font-size: 15px;
+                font-weight: 400;
+                margin-top: 20%;
+            }
+        }
+
+        @media (max-width: 850px) {
+
+            body {
+                min-height: auto;
+                height: auto;
+            }
+
+            main {
+                height: auto;
+                width: 100%;
+                margin: 40px;
+                flex-direction: column;
+                padding: 70px;
+            }
+
+            main section.right {
+                width: 100%;
+                padding-right: 0px;
+                margin-top: 30px;
+            }
+
+            main section.right h2 {
+                font-size: 30px;
+            }
+
+            main section.right p {
+                font-size: 13px;
+            }
+
+            main section.right p:nth-child(4) {
+                display:block;
+            }
+            
+            main section.right a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                margin-top: 5px;
+            }
+
+            main section.left {
+                height: auto;
+                width: auto;
+                margin-left: 0px;
+                margin-top: 0px;
+                padding: 25px;
+            }
+
+            main section.left article.glassmorphism {
+                height: auto;
+                padding: 25px;
+                width: 100%;
+            }
+
+            main section.left article.glassmorphism p:nth-child(1) {
+                font-size: 15px;
+            }
+
+            main section.left article.glassmorphism h2 {
+                margin-top: 3px;
+            }
+
+            main section.left article.glassmorphism p:nth-child(3) {
+                font-size: 13px;
+                margin-top: 30px;
+            }
+
+            main section.left article.glassmorphism p:nth-child(4), main section.left article.glassmorphism a {
+                display: none;
+            }
+        }
+
+        @media (max-width: 590px) {
+            main {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 510px) {
+            main {
+                margin: 30px;
+                padding: 25px;
+            }
+
+            main section.left {
+                padding: 20px;
+            }
+
+            main section.left article.glassmorphism {
+                height: auto;
+                padding: 20px;
+                width: 100%;
+            }
+
+            main section.left article.glassmorphism h2 {
+                margin-top: 3px;
+                font-size: 22px;
+            }
+
+            main section.left article.glassmorphism p:nth-child(1) {
+                font-size: 12px;
+            }
+
+            main section.left article.glassmorphism p:nth-child(3) {
+                font-size: 12px;
+                margin-top: 15px;
+            }
+
+            main section.right h2 {
+                font-size: 22px;
+            }
+
+            main section.right p {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+
+            main section.right form > div:nth-child(1) label, main section.right form > div:nth-child(2) label {
+                margin-top: 20px;
+                font-size: 10px;
+            }
+
+            main section.right form > div:nth-child(1) input, main section.right form > div:nth-child(2) input {
+                margin-top: 5px;
+            }
+
+            main section.right form > div > div.loginLongterm {
+                font-size: 12px;
+            }
+
+            main section.right form > div > div.loginLongterm label {
+                margin-left: 10px;
+            }
+
+            main section.right p:nth-child(4) {
+                font-size: 10px;
+                margin-top: 20px;
+            }
+            
+            main section.right a {
+                margin-top: 5px;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="left">
+            <article class="glassmorphism">
+                <p>Všichni tu</p>
+                <h2>na tebe čekáme&nbsp;!</h2>
+                <p>Připoj se k více jak 1 milionu uživatelů a více jak 4.2 milionu koček na platformě CattoS.</p>
+                <p>Nemáš účet?</p>
+                <a href="#">Registruj se</a>
+            </article>
+        </section>
+        <section class="right">       
+            <h2>Vítej kočičí osobo!</h2>
+            <p>Přihlaš se</p>
+            <form action="default.php">
+                <div>
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail">
+                </div>
+                <div>
+                    <label for="pass">Heslo</label>
+                    <input type="password" id="pass">
+                </div>
+                <div>
+                    <div class="loginLongterm">
+                        <input type="checkbox" id="check">
+                        <label for="check">Přihlásit se dlouhodobě</label>
+                    </div>
+                    <input type="submit" value="Přihlásit se" class="submit">
+                </div>
+            </form>
+            <p>Nemáš účet?</p>
+            <a href="#">Registruj se</a>
+        </section>
+    </main>
+</body>
+</html>
